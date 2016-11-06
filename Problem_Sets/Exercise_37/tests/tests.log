@@ -1,0 +1,10 @@
+-----
+RUNNING: ./tests/hashmap_tests
+Node: THE VALUE 1
+Ending: THE VALUE 1
+Node: THE VALUE 2
+Ending: THE VALUE 2
+Node: THE VALUE 3
+Ending: THE VALUE 3
+ALL TESTS PASSED
+Tests run: 5

@@ -1,0 +1,73 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CFLAGS	Makefile	/^CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)$/;"	m
+DArray	src/lcthw/darray.h	/^typedef struct DArray$/;"	s
+DArray	src/lcthw/darray.h	/^} DArray;$/;"	t	typeref:struct:DArray
+DArray_clear	src/lcthw/darray.c	/^void DArray_clear(DArray *array)$/;"	f
+DArray_clear_destroy	src/lcthw/darray.c	/^void DArray_clear_destroy(DArray *array)$/;"	f
+DArray_contract	src/lcthw/darray.c	/^int DArray_contract(DArray *array)$/;"	f
+DArray_count	src/lcthw/darray.h	/^#define DArray_count(/;"	d
+DArray_create	src/lcthw/darray.c	/^DArray * DArray_create(size_t element_size,size_t initial_max)$/;"	f
+DArray_destroy	src/lcthw/darray.c	/^void DArray_destroy(DArray *array)$/;"	f
+DArray_end	src/lcthw/darray.h	/^#define DArray_end(/;"	d
+DArray_expand	src/lcthw/darray.c	/^int DArray_expand(DArray *array)$/;"	f
+DArray_first	src/lcthw/darray.h	/^#define DArray_first(/;"	d
+DArray_free	src/lcthw/darray.h	/^#define DArray_free(/;"	d
+DArray_get	src/lcthw/darray.h	/^static inline void * DArray_get(DArray *array,int i)$/;"	f
+DArray_last	src/lcthw/darray.h	/^#define DArray_last(/;"	d
+DArray_max	src/lcthw/darray.h	/^#define DArray_max(/;"	d
+DArray_new	src/lcthw/darray.h	/^static inline void * DArray_new(DArray *array)$/;"	f
+DArray_pop	src/lcthw/darray.c	/^void * DArray_pop(DArray *array)$/;"	f
+DArray_push	src/lcthw/darray.c	/^int DArray_push(DArray *array,void *el)$/;"	f
+DArray_remove	src/lcthw/darray.h	/^static inline void * DArray_remove(DArray *array,int i)$/;"	f
+DArray_resize	src/lcthw/darray.c	/^static inline int DArray_resize(DArray *array,size_t newsize)$/;"	f	file:
+DArray_set	src/lcthw/darray.h	/^static inline void DArray_set(DArray *array,int i,void *el)$/;"	f
+DEFAULT_EXPAND_RATE	src/lcthw/darray.h	/^#define DEFAULT_EXPAND_RATE /;"	d
+LIBS	Makefile	/^LIBS=-ldl $(OPTLIBS)$/;"	m
+NDEBUG	tests/minunit.h	/^#undef NDEBUG$/;"	d
+OBJECTS	Makefile	/^OBJECTS=$(patsubst %.c,%.o,$(SOURCES))$/;"	m
+PREFIX	Makefile	/^PREFIX?=\/usr\/local$/;"	m
+RUN_TESTS	tests/minunit.h	/^#define RUN_TESTS(/;"	d
+SOURCES	Makefile	/^SOURCES=$(wildcard src\/**\/*.c src\/*.c)$/;"	m
+SO_TARGET	Makefile	/^SO_TARGET=$(patsubst %.a,%.so,$(TARGET)) # Shared object (linked during runtime after creation of .o file so if there's any change in .so files, you don't need to recompile your main program; however, the main program needs to be linked to the new .so file with the 'ln' command)$/;"	m
+TARGET	Makefile	/^TARGET=build\/liblcthw.a # Archive libraries (statically linked when you compile your program so if there's any change in the library, you need to compile and build your code again)$/;"	m
+TESTS	Makefile	/^TESTS=$(patsubst %.c,%,$(TEST_SRC))$/;"	m
+TEST_SRC	Makefile	/^TEST_SRC=$(wildcard tests\/*_tests.c)$/;"	m
+_DArray_h	src/lcthw/darray.h	/^#define _DArray_h$/;"	d
+__dbg_h__	src/lcthw/dbg.h	/^#define __dbg_h__$/;"	d
+_minunit_h	tests/minunit.h	/^#define _minunit_h$/;"	d
+all_tests	tests/darray_tests.c	/^RUN_TESTS(all_tests);$/;"	v
+all_tests	tests/darray_tests.c	/^char * all_tests()$/;"	f
+array	tests/darray_tests.c	/^static DArray *array = NULL;$/;"	v	file:
+check	src/lcthw/dbg.h	/^#define check(/;"	d
+check_debug	src/lcthw/dbg.h	/^#define check_debug(/;"	d
+check_mem	src/lcthw/dbg.h	/^#define check_mem(/;"	d
+clean_errno	src/lcthw/dbg.h	/^#define clean_errno(/;"	d
+contents	src/lcthw/darray.h	/^    void **contents;$/;"	m	struct:DArray
+debug	src/lcthw/dbg.h	/^#define debug(/;"	d
+element_size	src/lcthw/darray.h	/^    size_t element_size;$/;"	m	struct:DArray
+end	src/lcthw/darray.h	/^    int end;$/;"	m	struct:DArray
+expand_rate	src/lcthw/darray.h	/^    size_t expand_rate;$/;"	m	struct:DArray
+log_err	src/lcthw/dbg.h	/^#define log_err(/;"	d
+log_info	src/lcthw/dbg.h	/^#define log_info(/;"	d
+log_warn	src/lcthw/dbg.h	/^#define log_warn(/;"	d
+max	src/lcthw/darray.h	/^    int max;$/;"	m	struct:DArray
+mu_assert	tests/minunit.h	/^#define mu_assert(/;"	d
+mu_run_test	tests/minunit.h	/^#define mu_run_test(/;"	d
+mu_suite_start	tests/minunit.h	/^#define mu_suite_start(/;"	d
+sentinel	src/lcthw/dbg.h	/^#define sentinel(/;"	d
+test_create	tests/darray_tests.c	/^char * test_create()$/;"	f
+test_destroy	tests/darray_tests.c	/^char * test_destroy()$/;"	f
+test_expand_contract	tests/darray_tests.c	/^char * test_expand_contract()$/;"	f
+test_get	tests/darray_tests.c	/^char * test_get()$/;"	f
+test_new	tests/darray_tests.c	/^char * test_new()$/;"	f
+test_push_pop	tests/darray_tests.c	/^char * test_push_pop()$/;"	f
+test_remove	tests/darray_tests.c	/^char * test_remove()$/;"	f
+test_set	tests/darray_tests.c	/^char * test_set()$/;"	f
+tests_run	tests/minunit.h	/^int tests_run;$/;"	v
+val1	tests/darray_tests.c	/^static int *val1 = NULL;$/;"	v	file:
+val2	tests/darray_tests.c	/^static int *val2 = NULL;$/;"	v	file:

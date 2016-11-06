@@ -1,0 +1,10 @@
+-----
+RUNNING: ./tests/list_tests
+test3 data
+test2 data
+test1 data
+test6 data
+test5 data
+test4 data
+ALL TESTS PASSED
+Tests run: 8
